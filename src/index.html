@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Corrida Mario 🏁</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🏁 Corrida Mario vs Pikachu</h1>
+
+  <div class="track">
+    <div class="finish-line"></div>
+    <div class="lane">
+      <div id="mario" class="player mario"><img src="/docs/mario.webp" alt=""></div>
+    </div>
+    <div class="lane">
+      <div id="luigi" class="player luigi"><img src="/docs/pikachu.webp" alt=""></div>
+    </div>
+  </div>
+
+  <button id="btn" onclick="startRace()">Iniciar Corrida 🚀</button>
+  <button id="resetBtn" onclick="resetGame()" style="display:none;">Jogar Novamente 🔄</button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

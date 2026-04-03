@@ -1,0 +1,66 @@
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #111;
+      color: #fff;
+    }
+
+    .track {
+      width: 80%;
+      margin: 20px auto;
+      padding: 10px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .lane {
+      height: 40px;
+      background: #333;
+      margin: 10px 0;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    .finish-line {
+      position: absolute;
+      z-index: 1;
+      right: 50px;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      background: yellow;
+    }
+
+    .player {
+      height: 40px;
+      width: 40px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: left 0.5s;
+      z-index: 1;
+    }
+
+    .mario img{
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .luigi img{ 
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+     }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
