@@ -7,20 +7,117 @@
 </head>
 <body>
 
+<!-- =============================== Players ====================================== -->
+<div class="player-ini">
+<h1>Desafio de projeto do Felipão: Mario Kart.JS</h1>
+
+  <table>
+        <tr>
+            <td>
+                <img src="/docs/header.gif" alt="Mario Kart" width="200">
+            </td>
+            <td>
+                <b>🎯Objetivo:</b>
+                <p>Escolha seu jogador para uma  corrida Épica, contra o melhor corredor do mundo🍄</p>
+            </td>
+        </tr>
+    </table>
+
+<h2>Players</h2>
+      <table style="border-collapse: collapse; width: 800px; margin: 0 auto;">
+        <tr>
+            <td style="border: 1px solid black; text-align: center;">
+                <p>Mario</p>
+                <img class="personagem" id="Mario" src="/docs/mario2.png" alt="Mario Kart" width="60" height="60">
+            </td>
+            <td style="border: 1px solid black; text-align: center;">
+                <p>Velocidade: 4</p>
+                <p>Manobrabilidade: 3</p>
+                <p>Poder: 3</p>
+            </td>
+             <td style="border: 1px solid black; text-align: center;">
+                <p>Peach</p>
+                <img class="personagem" id="Peach" src="/docs/peach2.png" alt="Mario Kart" width="60" height="60">
+            </td>
+            <td style="border: 1px solid black; text-align: center;">
+                <p>Velocidade: 3</p>
+                <p>Manobrabilidade: 4</p>
+                <p>Poder: 2</p>
+            </td>
+              <td style="border: 1px solid black; text-align: center;">
+                <p>Yoshi</p>
+                <img class="personagem" id="Yoshi" src="/docs/yoshi2.png" alt="Mario Kart" width="60" height="60">
+            </td>
+            <td style="border: 1px solid black; text-align: center;">
+                <p>Velocidade: 2</p>
+                <p>Manobrabilidade: 4</p>
+                <p>Poder: 3</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; text-align: center;">
+                <p>Bowser</p>
+                <img class="personagem" id="Bowser" src="/docs/bowser2.png" alt="Mario Kart" width="60" height="60">
+            </td>
+            <td style="border: 1px solid black; text-align: center;">
+                <p>Velocidade: 5</p>
+                <p>Manobrabilidade: 2</p>
+                <p>Poder: 5</p>
+            </td>
+            <td style="border: 1px solid black; text-align: center;">
+                <p>Luigi</p>
+                <img class="personagem" id="Luigi" src="/docs/luigi2.png" alt="Mario Kart" width="60" height="60">
+            </td>
+            <td style="border: 1px solid black; text-align: center;">
+                <p>Velocidade: 3</p>
+                <p>Manobrabilidade: 4</p>
+                <p>Poder: 4</p>
+            </td>
+            <td style="border: 1px solid black; text-align: center;">
+                <p>Donkey Kong</p>
+                <img class="personagem" id="DK" src="/docs/dk2.png" alt="Mario Kart" width="60" height="60">
+            </td>
+            <td style="border: 1px solid black; text-align: center;">
+                <p>Velocidade: 2</p>
+                <p>Manobrabilidade: 2</p>
+                <p>Poder: 5</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!-- ============================ Corrida ===================================== -->
+
+<div class="corrida">
   <h1>🏁 Corrida Mario vs Pikachu</h1>
 
   <div class="track">
-    <div class="finish-line"></div>
-    <div class="lane">
-      <div id="mario" class="player mario"><img src="/docs/mario.webp" alt=""></div>
+   <div class="finish-line"></div>
+  <div class="lane">
+
+    <img class="pista" src="/docs/pista.webp" alt="">
+
+    <div class="player jogador1">
+      <img id="imagem" src="" alt="">
     </div>
-    <div class="lane">
-      <div id="luigi" class="player luigi"><img src="/docs/pikachu.webp" alt=""></div>
-    </div>
+
   </div>
 
-  <button id="btn" onclick="startRace()">Iniciar Corrida 🚀</button>
-  <button id="resetBtn" onclick="resetGame()" style="display:none;">Jogar Novamente 🔄</button>
+  <div class="lane">
+
+    <img class="pista" src="/docs/pista.webp" alt="">
+
+    <div class="player jogador2">
+      <img src="/docs/mario2.png" alt="">
+    </div>
+
+  </div>
+
+</div>
+
+  <button class="Btns" id="btn" onclick="startRace()">Iniciar Corrida 🚀</button>
+  <button class="Btns" id="resetBtn" onclick="resetGame()" style="display:none;">Jogar Novamente 🔄</button>
+</div>
 
   <script src="script.js"></script>
 

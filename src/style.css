@@ -1,12 +1,29 @@
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background: #111;
+      background: #ffffff;
       color: #fff;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+    }
+
+    .corrida{
+    margin-left: 10px;
+    background-color: #111;
+    width: 99%;
+    height: 98%;
+    
+    }
+
+    .player-ini {
+    background-color: #111;
+    width: 99%;
+    height: 98%;
     }
 
     .track {
-      width: 80%;
+      width: 90%;
       margin: 20px auto;
       padding: 10px;
       border: 2px solid #fff;
@@ -15,21 +32,31 @@
     }
 
     .lane {
-      height: 40px;
-      background: #333;
-      margin: 10px 0;
-      border-radius: 5px;
-      position: relative;
+     height: 40px;
+     margin: 10px 0;
+     border-radius: 5px;
+     position: relative;
+      overflow: hidden;
     }
 
+    .pista {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     left: 0;
+     top: 0;
+     z-index: 0;
+    }
+    
     .finish-line {
-      position: absolute;
-      z-index: 1;
-      right: 50px;
-      top: 0;
-      bottom: 0;
-      width: 5px;
-      background: yellow;
+     position: absolute;
+     right: 50px;
+     top: 0;
+     bottom: 0;
+     width: 5px;
+     background: yellow;
+     z-index: 1;
     }
 
     .player {
@@ -39,10 +66,10 @@
       top: 0;
       left: 0;
       transition: left 0.5s;
-      z-index: 1;
+      z-index: 2;
     }
 
-    .mario img{
+    .jogador1 img{
       height: 40px;
       width: 40px;
       background-size: cover;
@@ -50,7 +77,7 @@
       background-repeat: no-repeat;
     }
 
-    .luigi img{ 
+    .jogador2 img{ 
       height: 40px;
       width: 40px;
       background-size: cover;
@@ -58,9 +85,25 @@
       background-repeat: no-repeat;
      }
 
-    button {
+    .Btns {
       padding: 10px 20px;
       font-size: 16px;
       margin-top: 20px;
       cursor: pointer;
+    }
+
+    /* inicio */
+    .tela-ini{
+      background-size: cover;
+      background-position: center;
+      width: 600px;
+    }
+    button a{
+      text-decoration: none;
+      color: #111;
+    }
+    .personagem{
+      cursor: pointer;
+      border: solid 1px ;
+      background-color: #3d3131;
     }

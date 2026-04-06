@@ -1,14 +1,71 @@
- const player1 = {
-      nome: "Mario",
+     const player1 = {
+      id: "Mario",
       velocidade: 30,
+      img: "mario2.png",
       posicao: 0
     };
 
     const player2 = {
-      nome: "Pikachu",
+      id: "Peach",
       velocidade: 30,
+      img: "peach2.png",
       posicao: 0
     };
+     const player3 = {
+      id: "Yoshi",
+      velocidade: 30,
+      img: "yoshi2.png",
+      posicao: 0
+    };
+
+    const player4 = {
+      id: "Bowser",
+      velocidade: 30,
+      img: "bowser2.png",
+      posicao: 0
+    };
+     const player5 = {
+      id: "Luigi",
+      velocidade: 30,
+      img: "luigi2.png",
+      posicao: 0
+    };
+
+    const player6 = {
+      id: "DK",
+      velocidade: 30,
+      img: "dk2.png",
+      posicao: 0
+    };
+
+    const personagens =  document.querySelectorAll(".personagem");
+    const imagem = document.getElementById("imagem");
+
+    personagens.forEach(personagem => {
+    personagem.addEventListener("click", function () {
+    const player = this.id;
+
+
+    if (player === "Mario") {
+      imagem.src = "/docs/mario2.png";
+    } else if (player === "Peach") {
+      imagem.src = "/docs/peach2.png";
+    } else if (player === "Yoshi") {
+      imagem.src = "/docs/yoshi2.png";
+    } else if (player === "Bowser") {
+      imagem.src = "/docs/bowser2.png";
+    } else if (player === "Luigi") {
+      imagem.src = "/docs/luigi2.png";
+    } else if (player === "DK") {
+      imagem.src = "/docs/dk2.png";
+    }
+    });
+    });
+
+
+
+// =============================== Index ==============================
+
     // Simula a rolagem de um dado de 6 lados
     function rollDice() {
       return Math.floor(Math.random() * 6) + 1;
@@ -19,8 +76,8 @@
     }
     // Move o player de acordo com a nova posição em PX
     function updateUI() {
-      document.getElementById("mario").style.left = player1.posicao + "px";
-      document.getElementById("luigi").style.left = player2.posicao + "px";
+      document.querySelector(".jogador1").style.left = player1.posicao + "px";
+      document.querySelector(".jogador2").style.left = player2.posicao + "px";
     }
     // Mantem a logica do codigo antigo, definindo os raudes.
     async function startRace() {
@@ -58,9 +115,9 @@
     if (player1.posicao >= FINISH_LINE && player2.posicao >= FINISH_LINE) {
     alert("Empate épico! 🏁");
      } else if (player1.posicao >= FINISH_LINE) {
-    alert("Mario venceu! 🏆");
+    alert("Você venceu! 🏆");
      } else if (player2.posicao >= FINISH_LINE) {
-    alert("Pikachu venceu! 🏆");
+    alert("Mario venceu! 🏆 e você perdeu😥");
      }
         
         updateUI();
@@ -84,3 +141,4 @@
     // mostrar botão iniciar de novo
     document.getElementById("btn").style.display = "inline-block";
      }
+     
