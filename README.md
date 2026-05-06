@@ -1,4 +1,4 @@
-# 🏁 Simulador de Corrida - Mario vs Pikachu
+# 🏁 Simulador de Corrida - Mario Kart
 
 Este projeto é um **simulador de corrida em JavaScript**, onde dois personagens competem entre si para alcançar a linha de chegada.
 
@@ -7,7 +7,7 @@ Este projeto é um **simulador de corrida em JavaScript**, onde dois personagens
 O jogo simula uma corrida entre dois jogadores:
 
 - **Mario**
-- **Pikachu**
+- **Player2**
 
 Cada jogador possui:
 - Nome
